@@ -1,0 +1,25 @@
+{
+  "name": "zirve",
+  "version": "0.0.0",
+  "description": "Front End of My Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakshamsaxena/zirve.git"
+  },
+  "author": "Saksham Saxena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sakshamsaxena/zirve/issues"
+  },
+  "homepage": "https://github.com/sakshamsaxena/zirve#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "jquery-scrollify": "^1.0.7"
+  }
+}

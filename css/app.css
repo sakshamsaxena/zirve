@@ -9,12 +9,15 @@ body {
 	background-position: 0% 40%;
 }
 .starter-template {
-	background-color: hsla(0, 100%, 100%, 0.25);
-	padding: 40px 15px;
+	background-color: hsla(0, 100%, 100%, 0.4);
+	border: 2px solid transparent;
+	border-radius: 10px;
+	padding: 40px 15px 0px;
 	margin: 1em auto;
 	margin-right: 0;
 	text-align: center;
 	width: 50%;
+	color: black;
 }
 .starter-template h1 {}
 .home-brief {
