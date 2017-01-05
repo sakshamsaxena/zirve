@@ -20,7 +20,9 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
 	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-
+	
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Bad+Script|Open+Sans+Condensed:300" rel="stylesheet">
+	
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/app.css">
@@ -34,8 +36,8 @@
 			<p class="lead home-brief">Use this document as a way to quickly start any new project. Use this document as a way to quickly start any new project. Use this document as a way to quickly start any new project. Use this document as a way to quickly start any new project.</p>
 			<p class="lead">Here is what I wrote recently :</p>
 			<div class="latest-blog">
-				<h2><a href=""><b>Title</b></a></h2>
-				<blockquote><em>Use this document as a way to quickly start any new project. Use this document as a way to quickly start any new project. Use this document as a way to quickly start any new project.</em></blockquote>
+				<h1 class="latest-blog-title"><a href=""><b>Title</b></a></h1>
+				<blockquote class="latest-blog-gist"><em>Use this document as a way to quickly start any new project. Use this document as a way to quickly start any new project. Use this document as a way to quickly start any new project.</em></blockquote>
 			</div>
 		</div>
 
@@ -77,7 +79,9 @@
 
 	</div>
 	<!-- Menu Button (Draggable) -->
-	<div class="menu-button" draggable="true" id="dragme"></div>
+	<div class="menu-button" draggable="true" id="dragme">
+		<span class="glyphicon glyphicon-th"></span>
+	</div>
 	
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
