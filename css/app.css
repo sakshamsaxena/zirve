@@ -4,10 +4,11 @@ body {
 	padding-top: 50px;
 }
 .diapo:nth-of-type(1) {
-	background-image: url(../imgs/HBackground.jpg)
+	background-image: url(../imgs/HBackground.jpg);
+	
 }
 .diapo:nth-of-type(2) {
-	background-image: url(../imgs/ABackground.jpg)
+	background-image: url(../imgs/ABackground.jpg);
 }
 .diapo:nth-of-type(3) {
 	background-image: url(../imgs/BBackground.jpg)
@@ -26,12 +27,26 @@ body {
 	border: 2px solid transparent;
 	border-radius: 10px;
 	padding: 40px 15px 0px;
-	margin: 3em auto 1em;
-	margin-right: 0;
 	text-align: center;
 	width: 50%;
 	color: black;
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+.home {
+	margin-left: 2em;
+	margin-right: 0
+}
+.about {
+	margin-left: 0;
+	margin-right: 2em;
+	float: right
+}
+.blog, .contact {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto
 }
 .t1, .t2, .t3, .t4 {
 	opacity: 0
@@ -82,7 +97,7 @@ ul {
 }
 .pagination {
 	position: fixed;
-	left: 1em;
+	right: 1em;
 	top: 40%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
