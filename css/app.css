@@ -1,5 +1,16 @@
 /* Application Styles */
-
+.curtain {
+	position: fixed;
+	z-index: 999999;
+	height: 100%;
+	width: 100%;
+	background: #f0f8ff;
+	top: 0;
+	margin: auto
+}
+.progress {
+	top: 50%;
+}
 body {
 	padding-top: 50px;
 }
@@ -83,9 +94,11 @@ body {
 	-webkit-animation: glow 4s infinite;
 	animation: glow 4s infinite linear;
 	box-shadow: 0 0 4px 4px black;
-	cursor: -webkit-grab;
-	cursor: grab;
+	cursor: pointer;
 	z-index: 1002
+}
+.menu-button:focus {
+	cursor: drag;
 }
 .menu-button span {
 	text-align: center;
