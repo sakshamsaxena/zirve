@@ -37,14 +37,14 @@ function anim(i, panels) {
 		duration: 1000,
 		queue: true
 	};
-	
+
 	$(panels[i]).find(".t1")
 		.animate(q, r)
 		.queue(function () {
 			$(panels[i]).find(".t2").animate(q, r);
 			$(this).dequeue();
 		})
-		.delay(3000)
+		.delay(2000)
 		.queue(function () {
 			$(panels[i]).find(".t3").animate(q, r);
 			$(this).dequeue();
@@ -56,17 +56,22 @@ function anim(i, panels) {
 		});
 }
 
-$("#dragme").on("dragstart", drag_start).click(function() {
+$("#dragme").on("dragstart", drag_start).click(function () {
 	$("section.menu").slideToggle();
-	console.log("clicked")
 });
+
+$(".menu ul.collection .title").click(function(e) {
+	$("section.menu").slideToggle();
+	$.scrollify.move(e.target.getAttribute("href"));
+	return true
+})
 
 $("body").on("dragover", drag_over);
 
 $("body").on("drop", drop);
 
-$(document).ready(function() {
-	setTimeout(function() {
+$(document).ready(function () {
+	setTimeout(function () {
 		anim(0, document.getElementsByClassName("diapo"));
 	}, 200)
 })

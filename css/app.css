@@ -61,12 +61,13 @@ body {
 .latest-blog-title {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 3em !important;
-	margin-bottom: 0
+	margin: 0 auto !important
 }
 .latest-blog-gist {
 	font-family: 'Bad Script', cursive;
 	font-size: 1.6em;
 	line-height: 1.5em;
+	margin: 0 auto !important
 }
 .menu-button {
 	position: fixed;
@@ -165,10 +166,25 @@ section.menu {
 	width: 100%;
 	height: 100%;
 	top: 0;
-	text-align: center;
-	padding: 2em;
+	padding-top: 5em;
 	background-image: url('../imgs/MBackground.jpg');
 	z-index: 1001
+}
+.menu ul.collection {
+	margin-top: 4em;
+	width: 12em;
+	margin: auto;
+	height: 80%;
+	border: none;
+}
+.menu ul.collection li {
+	background: none;
+	border: none
+}
+.menu ul.collection .title {
+	font-size: 2em !important;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1.6em
 }
 @media screen and (max-width: 768px) {
 	.starter-template {
