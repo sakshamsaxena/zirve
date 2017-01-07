@@ -56,6 +56,27 @@ function anim(i, panels) {
 		});
 }
 
+function getLatestPost() {
+	$.ajax({
+		method: 'GET',
+		url: 'http://localhost:3000/blog/latest',
+		success: function (data) {
+			// Get the data in right format
+			var post = data[0];
+			var title = post.title;
+			var content = post.content;
+			var fullURL = "https://sakshamsaxena.in/blog/#"+post.postId;
+			content = content.substr(0, 190);
+			content = content.substr(0, content.lastIndexOf(" "));
+			content += '<a href="' + fullURL + '"><i class="material-icons" style="vertical-align:bottom;">more_horiz</i></a>';
+
+			// Put the data now
+			$("#post-title").text(title).parent().attr("href", fullURL);
+			$(".latest-blog-gist").html(content);
+		}
+	})
+}
+
 $(document).ready(function () {
 	var pl = '<div class="curtain"><div class="progress"><div class="indeterminate"></div></div></div>';
 	$("body").append(pl);
@@ -80,6 +101,7 @@ $(window).on("load", function () {
 	setTimeout(function () {
 		anim(0, document.getElementsByClassName("diapo"))
 	}, 200);
+	getLatestPost()
 });
 
 $(function () {

@@ -67,7 +67,8 @@ body {
 	font-size: 5em
 }
 .home-brief {
-	text-align: justify
+	text-align: justify;
+	margin-bottom: 0
 }
 .latest-blog-title {
 	font-family: 'Open Sans Condensed', sans-serif;
