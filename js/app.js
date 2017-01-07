@@ -56,7 +56,10 @@ function anim(i, panels) {
 		});
 }
 
-$("#dragme").on("dragstart", drag_start);
+$("#dragme").on("dragstart", drag_start).click(function() {
+	$("section.menu").slideToggle();
+	console.log("clicked")
+});
 
 $("body").on("dragover", drag_over);
 
