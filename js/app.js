@@ -59,16 +59,16 @@ function anim(i, panels) {
 function getLatestPost() {
 	$.ajax({
 		method: 'GET',
-		url: 'http://localhost:3000/blog/latest',
+		url: 'http://192.168.1.4:3000/blog/latest',
 		success: function (data) {
 			// Get the data in right format
 			var post = data[0];
 			var title = post.title;
 			var content = post.content;
-			var fullURL = "https://sakshamsaxena.in/blog/#"+post.postId;
+			var fullURL = "https://sakshamsaxena.in/blog/#" + post.postId;
 			content = content.substr(0, 190);
 			content = content.substr(0, content.lastIndexOf(" "));
-			content += '<a href="' + fullURL + '"><i class="material-icons" style="vertical-align:bottom;">more_horiz</i></a>';
+			content += " ...";
 
 			// Put the data now
 			$("#post-title").text(title).parent().attr("href", fullURL);
@@ -78,8 +78,7 @@ function getLatestPost() {
 }
 
 $(document).ready(function () {
-	var pl = '<div class="curtain"><div class="progress"><div class="indeterminate"></div></div></div>';
-	$("body").append(pl);
+	
 });
 
 $("body").on("dragover", drag_over);
@@ -97,7 +96,6 @@ $(".menu ul.collection .title").click(function (e) {
 });
 
 $(window).on("load", function () {
-	$(".curtain").remove();
 	setTimeout(function () {
 		anim(0, document.getElementsByClassName("diapo"))
 	}, 200);
@@ -105,9 +103,13 @@ $(window).on("load", function () {
 });
 
 $(function () {
+	var flag;
+	window.innerWidth <= 768 ? flag = true : flag = false;
 	$.scrollify({
 		section: ".diapo",
-		scrollbars: false,
+		scrollbars: flag,
+		overflowScroll: true,
+		touchScroll: true,
 		afterRender: function () {
 			var pagination = "<ul class=\"pagination\">";
 			var activeClass = "";
@@ -130,7 +132,6 @@ $(function () {
 		},
 		after: function (i, panels) {
 			anim(i, panels)
-			console.log($(panels[i]).find(".t1"))
 		}
 	});
 
