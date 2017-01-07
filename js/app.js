@@ -1,10 +1,12 @@
 /* Application Sripts */
 function drag_start(event) {
 	event.originalEvent.dataTransfer.setData("text/plain", (event.pageX) + ',' + (event.pageY));
+	console.log("Start")
 }
 
 function drag_over(event) {
 	event.preventDefault();
+	console.log("Over-ring")
 	return false;
 }
 
@@ -24,7 +26,8 @@ function drop(event) {
 		top: top,
 		left: left
 	});
-
+	
+	console.log("drop")
 	event.preventDefault();
 	return false;
 }
@@ -76,10 +79,6 @@ function getLatestPost() {
 		}
 	})
 }
-
-$(document).ready(function () {
-	
-});
 
 $("body").on("dragover", drag_over);
 

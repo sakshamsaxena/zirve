@@ -1,4 +1,5 @@
 /* Application Styles */
+
 .curtain {
 	position: fixed;
 	z-index: 999999;
@@ -16,7 +17,6 @@ body {
 }
 .diapo:nth-of-type(1) {
 	background-image: url(../imgs/HBackground.jpg);
-	
 }
 .diapo:nth-of-type(2) {
 	background-image: url(../imgs/ABackground.jpg);
@@ -27,7 +27,8 @@ body {
 .diapo:nth-of-type(4) {
 	background-image: url(../imgs/CBackground.jpg)
 }
-.diapo, section.menu {
+.diapo,
+section.menu {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -54,7 +55,8 @@ body {
 	margin-right: 2em;
 	float: right;
 }
-.blog, .contact {
+.blog,
+.contact {
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto
@@ -62,7 +64,10 @@ body {
 .t1 {
 	text-align: center
 }
-.t1, .t2, .t3, .t4 {
+.t1,
+.t2,
+.t3,
+.t4 {
 	opacity: 0
 }
 .starter-template h1 {
@@ -139,9 +144,7 @@ ul {
 .pagination li a:focus {
 	background-color: transparent
 }
-.pagination li a:focus {
-	
-}
+.pagination li a:focus {}
 .pagination li a {
 	background: transparent;
 	border: none
@@ -206,9 +209,17 @@ section.menu {
 	line-height: 1.6em
 }
 @media screen and (max-width: 768px) {
+	.menu-button {
+		position: fixed;
+		left: calc(100% - 90px);
+		top: 10px;
+	}
 	.starter-template {
 		width: 90%;
 		margin: 1em auto;
+	}
+	.latest-blog {
+		margin-bottom: 2em
 	}
 	.latest-blog-title {
 		font-size: 2.5em
@@ -224,6 +235,13 @@ section.menu {
 	}
 	.home-brief {
 		margin-bottom: 1em
+	}
+	.latest-blog .col-xs-6,
+	.latest-blog .col-xs-6 a {
+		padding: 0.1rem 0.5rem;
+	}
+	i.left {
+		margin-right: 6px;
 	}
 }
 @-webkit-keyframes glow {
