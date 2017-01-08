@@ -62,7 +62,7 @@ function anim(i, panels) {
 function getLatestPost() {
 	$.ajax({
 		method: 'GET',
-		url: 'http://192.168.1.4:3000/blog/latest',
+		url: 'http://192.168.1.6:3000/blog/latest',
 		success: function (data) {
 			// Get the data in right format
 			var post = data[0];

@@ -55,6 +55,9 @@ section.menu {
 	margin-right: 2em;
 	float: right;
 }
+.about p {
+	text-align: justify
+}
 .blog,
 .contact {
 	width: 90%;
@@ -83,7 +86,7 @@ section.menu {
 	font-size: 3em !important;
 	margin: 0 auto !important
 }
-.latest-blog-gist {
+blockquote {
 	font-family: 'Bad Script', cursive;
 	font-size: 1.6em;
 	line-height: 1.5em;
@@ -209,14 +212,19 @@ section.menu {
 	line-height: 1.6em
 }
 @media screen and (max-width: 768px) {
+	body {
+		padding: 0
+	}
 	.menu-button {
 		position: fixed;
 		left: calc(100% - 90px);
 		top: 10px;
 	}
 	.starter-template {
+		background-color: hsla(0, 100%, 100%, 0.6);
 		width: 90%;
-		margin: 1em auto;
+		margin: 1em auto !important;
+		float: none;
 	}
 	.latest-blog {
 		margin-bottom: 2em
@@ -224,7 +232,7 @@ section.menu {
 	.latest-blog-title {
 		font-size: 2.5em
 	}
-	.latest-blog-gist {
+	blockquote {
 		line-height: 1.4em;
 		font-size: 1.4em;
 		text-align: justify
