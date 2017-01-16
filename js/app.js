@@ -62,13 +62,13 @@ function anim(i, panels) {
 function getLatestPost() {
 	$.ajax({
 		method: 'GET',
-		url: 'http://192.168.1.6:3000/blog/latest',
+		url: 'https://localhost:3000/blog/latest',
 		success: function (data) {
 			// Get the data in right format
 			var post = data[0];
 			var title = post.title;
 			var content = post.content;
-			var fullURL = "https://sakshamsaxena.in/blog/#" + post.postId;
+			var fullURL = "https://localhost:80/blog/#" + post.postId;
 			content = content.substr(0, 190);
 			content = content.substr(0, content.lastIndexOf(" "));
 			content += " ...";
@@ -78,6 +78,10 @@ function getLatestPost() {
 			$(".latest-blog-gist").html(content);
 		}
 	})
+}
+
+function populateBlogSection() {
+	//TODO : Get posts number, make accordingly the rows and cols, and append!
 }
 
 $("body").on("dragover", drag_over);
@@ -94,6 +98,11 @@ $(".menu ul.collection .title").click(function (e) {
 	return true
 });
 
+$(document).ready(function () {
+	var ht = (window.innerHeight > 500) ? 400 : window.innerHeight;
+	$(".blog-scroll").css("height", ht+"px")
+});
+
 $(window).on("load", function () {
 	setTimeout(function () {
 		anim(0, document.getElementsByClassName("diapo"))
@@ -104,6 +113,7 @@ $(window).on("load", function () {
 $(function () {
 	var flag;
 	window.innerWidth <= 768 ? flag = true : flag = false;
+	console.log(flag);
 	$.scrollify({
 		section: ".diapo",
 		scrollbars: flag,
