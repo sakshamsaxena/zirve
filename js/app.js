@@ -62,19 +62,20 @@ function anim(i, panels) {
 function getLatestPost() {
 	$.ajax({
 		method: 'GET',
-		url: 'https://localhost:3000/blog/latest',
+		url: 'http://localhost:3000/blog/latest',
 		success: function (data) {
 			// Get the data in right format
 			var post = data[0];
 			var title = post.title;
 			var content = post.content;
-			var fullURL = "https://localhost:80/blog/#" + post.postId;
+			var fullURL = "blog/index.html?postId=" + post.postId;
 			content = content.substr(0, 190);
 			content = content.substr(0, content.lastIndexOf(" "));
 			content += " ...";
 
 			// Put the data now
 			$("#post-title").text(title).parent().attr("href", fullURL);
+			$("#readMore").attr("href", fullURL);
 			$(".latest-blog-gist").html(content);
 		}
 	})
@@ -111,12 +112,9 @@ $(window).on("load", function () {
 });
 
 $(function () {
-	var flag;
-	window.innerWidth <= 768 ? flag = true : flag = false;
-	console.log(flag);
 	$.scrollify({
 		section: ".diapo",
-		scrollbars: flag,
+		scrollbars: true,
 		overflowScroll: true,
 		touchScroll: true,
 		afterRender: function () {
