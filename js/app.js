@@ -99,9 +99,30 @@ $(".menu ul.collection .title").click(function (e) {
 	return true
 });
 
+$(".bio").click(function(){
+	$(".about .t2").show();
+	$(".about .t3, .about .t4").hide();
+	$(this).removeClass("darken-2");
+	$(".interests, .ideas").addClass("darken-2");
+});
+$(".interests").click(function(){
+	$(".about .t3").show();
+	$(".about .t2, .about .t4").hide();
+	$(this).removeClass("darken-2");
+	$(".bio, .ideas").addClass("darken-2");
+});
+$(".ideas").click(function(){
+	$(".about .t4").show();
+	$(".about .t3, .about .t2").hide();
+	$(this).removeClass("darken-2");
+	$(".bio, .interests").addClass("darken-2");
+});
+
 $(document).ready(function () {
 	var ht = (window.innerHeight > 500) ? 400 : window.innerHeight;
-	$(".blog-scroll").css("height", ht+"px")
+	$(".blog-scroll").css("height", ht+"px");
+	$(".about .t3, .about .t4").hide();
+	$(".bio").toggleClass("darken-2");
 });
 
 $(window).on("load", function () {
