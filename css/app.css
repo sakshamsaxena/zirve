@@ -212,6 +212,9 @@ ul {
 	right: 4px;
 	bottom: 0;
 }
+.blog .row {
+	margin: 0 !important
+}
 section.menu {
 	display: none;
 	position: fixed;

@@ -99,6 +99,11 @@ $(".menu ul.collection .title").click(function (e) {
 	return true
 });
 
+$(".aboutBtn, .contBtn, .projBtn").click(function (e) {
+	$.scrollify.move(e.target.getAttribute("href"));
+	return true
+});
+
 $(".bio").click(function(){
 	$(".about .t2").show();
 	$(".about .t3, .about .t4").hide();
