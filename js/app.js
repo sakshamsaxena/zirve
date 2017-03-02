@@ -37,7 +37,7 @@ function anim(i, panels) {
 		opacity: 1
 	};
 	var r = {
-		duration: 1000,
+		duration: 800,
 		queue: true
 	};
 
