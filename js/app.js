@@ -123,11 +123,30 @@ $(".ideas").click(function(){
 	$(".bio, .interests").addClass("darken-2");
 });
 
+$(".projects").click(function(){
+	$(".blog .t2").show();
+	$(".blog .t3, .blog .t4").hide();
+	$(this).removeClass("darken-2");
+	$(".respon, .workexp").addClass("darken-2");
+});
+$(".respon").click(function(){
+	$(".blog .t3").show();
+	$(".blog .t2, .blog .t4").hide();
+	$(this).removeClass("darken-2");
+	$(".projects, .ideas").addClass("darken-2");
+});
+$(".workexp").click(function(){
+	$(".blog .t4").show();
+	$(".blog .t3, .blog .t2").hide();
+	$(this).removeClass("darken-2");
+	$(".projects, .respon").addClass("darken-2");
+});
+
 $(document).ready(function () {
 	var ht = (window.innerHeight > 500) ? 400 : window.innerHeight;
 	$(".blog-scroll").css("height", ht+"px");
-	$(".about .t3, .about .t4").hide();
-	$(".bio").toggleClass("darken-2");
+	$(".about .t3, .about .t4, .blog .t3, .blog .t4").hide();
+	$(".bio, .projects").toggleClass("darken-2");
 });
 
 $(window).on("load", function () {
