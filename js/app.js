@@ -4,6 +4,12 @@ function drag_start(event) {
 	console.log("Start")
 }
 
+$(window).on("load", function () {
+    setTimeout(function () {
+        anim(0, document.getElementsByClassName("diapo"))
+    }, 200);
+})
+
 function drag_over(event) {
 	event.preventDefault();
 	console.log("Over-ring")
