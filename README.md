@@ -1,6 +1,6 @@
 ## Zirve
 
-Simple Fron End for My Blog.
+Simple Front End for My Blog.
 
 ### Installation
 
