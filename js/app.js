@@ -1,42 +1,9 @@
 /* Application Sripts */
-function drag_start(event) {
-	event.originalEvent.dataTransfer.setData("text/plain", (event.pageX) + ',' + (event.pageY));
-	console.log("Start")
-}
-
 $(window).on("load", function () {
     setTimeout(function () {
         anim(0, document.getElementsByClassName("diapo"))
     }, 200);
-})
-
-function drag_over(event) {
-	event.preventDefault();
-	console.log("Over-ring")
-	return false;
-}
-
-function drop(event) {
-	var d = event.originalEvent.dataTransfer.getData("text/plain").split(',');
-	var oldX = parseInt(d[0]);
-	var oldY = parseInt(d[1]);
-
-	var dm = $("#dragme");
-	var offsetX = dm.offset().left;
-	var offsetY = dm.offset().top;
-
-	var top = parseFloat(event.pageY - oldY + offsetY);
-	var left = parseFloat(event.pageX - oldX + offsetX);
-
-	dm.offset({
-		top: top,
-		left: left
-	});
-	
-	console.log("drop")
-	event.preventDefault();
-	return false;
-}
+});
 
 function anim(i, panels) {
 	var q = {
@@ -64,14 +31,6 @@ function anim(i, panels) {
 			$(this).dequeue();
 		});
 }
-
-$("body").on("dragover", drag_over);
-
-$("body").on("drop", drop);
-
-$("#dragme").on("dragstart", drag_start).click(function () {
-	$("section.menu").slideToggle();
-});
 
 $(".menu ul.collection .title").click(function (e) {
 	$("section.menu").slideToggle();

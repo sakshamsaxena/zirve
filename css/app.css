@@ -215,6 +215,16 @@ ul {
 .blog .row {
 	margin: 0 !important
 }
+.about h1.t1 {
+    margin-bottom: 0
+}
+.about blockquote{
+    margin: -0.25em auto 0.25em !important;
+    border-left-color: #455a64
+}
+.blog blockquote{
+    border-left-color: #2e7d32
+}
 section.menu {
 	display: none;
 	position: fixed;
@@ -224,6 +234,12 @@ section.menu {
 	padding-top: 5em;
 	background-image: url('../imgs/MBackground.jpg');
 	z-index: 1001
+}
+.blog-snips h2 a{
+    color: #212121
+}
+.blog-snips h2 a:hover {
+    color: #454543
 }
 .menu ul.collection {
 	margin-top: 4em;
