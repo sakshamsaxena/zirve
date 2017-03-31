@@ -4,6 +4,12 @@ function drag_start(event) {
 	console.log("Start")
 }
 
+$(window).on("load", function () {
+    setTimeout(function () {
+        anim(0, document.getElementsByClassName("diapo"))
+    }, 200);
+})
+
 function drag_over(event) {
 	event.preventDefault();
 	console.log("Over-ring")
@@ -59,32 +65,6 @@ function anim(i, panels) {
 		});
 }
 
-function getLatestPost() {
-	$.ajax({
-		method: 'GET',
-		url: 'http://localhost:3000/blog/latest',
-		success: function (data) {
-			// Get the data in right format
-			var post = data[0];
-			var title = post.title;
-			var content = post.content;
-			var fullURL = "blog/index.html?postId=" + post.postId;
-			content = content.substr(0, 190);
-			content = content.substr(0, content.lastIndexOf(" "));
-			content += " ...";
-
-			// Put the data now
-			$("#post-title").text(title).parent().attr("href", fullURL);
-			$("#readMore").attr("href", fullURL);
-			$(".latest-blog-gist").html(content);
-		}
-	})
-}
-
-function populateBlogSection() {
-	//TODO : Get posts number, make accordingly the rows and cols, and append!
-}
-
 $("body").on("dragover", drag_over);
 
 $("body").on("drop", drop);
@@ -123,18 +103,31 @@ $(".ideas").click(function(){
 	$(".bio, .interests").addClass("darken-2");
 });
 
-$(document).ready(function () {
-	var ht = (window.innerHeight > 500) ? 400 : window.innerHeight;
-	$(".blog-scroll").css("height", ht+"px");
-	$(".about .t3, .about .t4").hide();
-	$(".bio").toggleClass("darken-2");
+$(".projects").click(function(){
+	$(".blog .t2").show();
+	$(".blog .t3, .blog .t4").hide();
+	$(this).removeClass("darken-2");
+	$(".respon, .workexp").addClass("darken-2");
+    $.scrollify.update();
+});
+$(".respon").click(function(){
+	$(".blog .t3").show();
+	$(".blog .t2, .blog .t4").hide();
+	$(this).removeClass("darken-2");
+	$(".projects, .ideas").addClass("darken-2");
+    $.scrollify.update();
+});
+$(".workexp").click(function(){
+	$(".blog .t4").show();
+	$(".blog .t3, .blog .t2").hide();
+	$(this).removeClass("darken-2");
+	$(".projects, .respon").addClass("darken-2");
+    $.scrollify.update();
 });
 
-$(window).on("load", function () {
-	setTimeout(function () {
-		anim(0, document.getElementsByClassName("diapo"))
-	}, 200);
-	getLatestPost()
+$(document).ready(function () {
+	$(".about .t3, .about .t4, .blog .t3, .blog .t4").hide();
+	$(".bio, .projects").toggleClass("darken-2");
 });
 
 $(function () {
