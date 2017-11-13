@@ -107,11 +107,16 @@ i.left {
 }
 
 .socialHome {
-    margin: 4em auto
+    margin: 2em auto 6em
 }
 
 .socialHome i.left {
     margin-left: 0
+}
+
+.socialHome i.left:hover {
+    color: black;
+    transition-duration: 0.4s
 }
 
 blockquote {
