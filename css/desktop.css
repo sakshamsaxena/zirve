@@ -33,7 +33,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 40%;
+    background-position: 0% 50%;
 }
 
 /*Content Division Styles*/
@@ -148,11 +148,27 @@ blockquote {
 .proj .row {
     margin: 0 !important
 }
+.proj .center-block a {
+    padding: 0 1em;
+    min-width: 14.2rem;
+    width: 100%
+}
+.proj .center-block a .label {
+    vertical-align: initial;
+}
+.proj .center-block a i.mdi {
+    margin-left: -0.6rem;
+    margin-right: -0.6rem;
+}
 .proj blockquote {
-    border-left-color: #2e7d32
+    border-left-color: #2e7d32;
+    font-size: 1.14rem
+}
+.proj-snips h2 {
+    font-size: 2.4rem
 }
 .proj-snips h2 a {
-    color: #212121
+    color: #212121;
 }
 .proj-snips h2 a:hover {
     color: #454543
@@ -161,6 +177,10 @@ blockquote {
 /*Fourth Section (Contact) Styles*/
 .socialHome {
     margin: 2em auto 6em
+}
+.socialHome a.btn-floating.btn-large {
+    width: 50px;
+    height: 50px
 }
 .socialHome i.left {
     margin-left: 0
