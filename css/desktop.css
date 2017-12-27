@@ -64,11 +64,16 @@ body {
 }
 blockquote {
     font-family: 'Bad Script', cursive;
-    font-size: 1.6em;
+    font-size: 1.36em;
     line-height: 1.5em;
     margin: 0 auto 2em !important;
     text-align: justify;
     border-left-color: #1976d2
+}
+.label{
+    text-align: center;
+    font-size: 1em;
+    vertical-align: text-top;
 }
 
 /*First Section (Home) Styles*/
@@ -85,17 +90,12 @@ blockquote {
     min-width: 11rem;
     width: 100%
 }
-i._left {
+.home i._left {
     margin-right: -0.5rem;
     margin-left: -0.5rem
 }
-i._left:nth-of-type(1){
+.home i._left.first{
     margin-right: -0.8rem
-}
-.label{
-    text-align: center;
-    font-size: 1em;
-    vertical-align: text-top;
 }
 .marginRow {
     height: 4em !important;
@@ -107,14 +107,29 @@ i._left:nth-of-type(1){
     margin-right: 2em;
     float: right;
 }
-
+.about h1.t1 {
+    margin-bottom: 0
+}
+.about .row.center-block {
+    margin-left: -0.5rem
+}
+.about .t1 a {
+    padding: 0 1em;
+    min-width: 7.5rem;
+    width: 100%
+}
+.about i._left {
+    margin-left: -0.6rem;
+    margin-right: -1rem;
+}
+.about i._left.second {
+    margin-right: -0.6rem;
+}
 .about p.lead {
     font-size: 1.2em;
     text-align: justify
 }
-.about h1.t1 {
-    margin-bottom: 0
-}
+
 .about blockquote {
     margin: -0.25em auto 0.25em !important;
     border-left-color: #455a64
