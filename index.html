@@ -21,15 +21,15 @@
 	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
 
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Bad+Script|Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Bad+Script|Open+Sans+Condensed:300|Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 
 	<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="lib/materialize-css/dist/css/materialize.min.css">
 	<link rel="stylesheet" href="lib/mdi/css/materialdesignicons.min.css" />
-	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 769px)">
+	<link rel="stylesheet" href="css/smartphone.css" media="screen and (max-width: 768px)">
 </head>
 
 <body>
@@ -37,39 +37,38 @@
 	<div class="container-fluid diapo" data-section-name="Home">
 		<div class="starter-template home">
 			<h1 class="t1">Hi! I'm Saksham </h1>
-			<p class="lead home-brief t2">
-				<span class="term">JavaScript Developer</span>
-				<span class="term">Audiophile</span>
-				<span class="term">Science &amp; Philosophy Lover</span>
-			</p>
+			<p class="lead home-brief t2">I'm a JavaScript Developer, who loves to drive, explore, and enjoy life.</p>
 			<div class="t3">
 				<div class="row">
-					<span class="col-sm-4">
+					<span class="col-xs-6">
 						<a class="waves-effect waves-light btn blue darken-2 aboutBtn" href="#About">
-							<i class="material-icons left">chevron_right</i>More about Me
+							<i class="material-icons _left">chevron_right</i>
+							<span class="label">More about Me</span>
 						</a>
 					</span>
-					<span class="col-sm-4">
+					<span class="col-xs-6">
 						<a class="waves-effect waves-light btn blue darken-2" href="http://stargazermusicmaker.tumblr.com">
-							<i class="material-icons left">description</i>Visit my Blog
+							<i class="material-icons _left">description</i>
+							<span class="label">Visit my Blog</span>
 						</a>
 					</span>
-					<span class="col-sm-4">
+				</div>
+				<div class="row">
+					<span class="col-xs-6">
 						<a class="waves-effect waves-light btn blue darken-2 projBtn" href="#Projects">
-							<i class="material-icons left">work</i>View my works
+							<i class="material-icons _left">work</i>
+							<span class="label">View my works</span>
+						</a>
+					</span>
+					<span class="col-xs-6">
+						<a class="waves-effect waves-light btn blue darken-2 contBtn" href="#Contact">
+							<i class="material-icons _left">person</i>
+							<span class="label">Get In Touch</span>
 						</a>
 					</span>
 				</div>
 			</div>
 			<div class="t4">
-				<p class="lead">I'm a highly accessible person. Connect anytime!</p>
-				<div class="row">
-					<span class="col-sm-12">
-					<a class="waves-effect waves-light btn btn-large blue darken-2 contBtn" href="#Contact">
-						<i class="material-icons left">person</i>Get In Touch
-					</a>
-				</span>
-				</div>
 				<div class="marginRow"></div>
 			</div>
 		</div>
@@ -103,7 +102,7 @@
 		</div>
 	</div>
 	<div class="container-fluid diapo" data-section-name="Projects">
-		<div class="starter-template blog">
+		<div class="starter-template proj">
 			<h1 class="t1">Experiences</h1>
 			<div class="row center-block lead t1">
 				<span class="col-sm-4">
@@ -123,36 +122,36 @@
 				</span>
 			</div>
 			<div class="row t2">
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><a href="https://github.com/sakshamsaxena/ocv-demo"><b>Automatic Dipper System in Vehicles</b></a></h2>
 					<p class="lead">Languages Used : OpenCV (C++)</p>
 					<blockquote class="projDesc">Built a hardware prototype on Raspberry Pi to process input visual feed from a web cam to detect oncoming high beam and generate a trigger. Applied my knowledge of Linux, various image processing algorithms, and optimization in C++. </blockquote>
 				</div>
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><a href="https://github.com/sakshamsaxena/node-notif"><b>IoT Based Parking Assistance System</b></a></h2>
 					<p class="lead">Languages Used : JavaScript (Node.js)</p>
 					<blockquote class="projDesc">Built a prototype on Raspberry Pi to map a parking lot and detect filled/vacant spots using IR sensors. This data was served through a Node.js server instance on Pi itself with real-time visualisation support using WebSockets. </blockquote>
 				</div>
 			</div>
 			<div class="row t2">
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><a href="https://github.com/sakshamsaxena/zirve"><b>Zirve (sakshamsaxena.in)</b></a></h2>
 					<p class="lead">Languages Used : HTML, CSS, JavaScript</p>
 					<blockquote class="projDesc">Built my personal website from scratch, and named it Zirve. Wrote custom effects, and used BootStrap with Materialize for layout and widgets. Supports a simple Markdown parser to serve blog posts. </blockquote>
 				</div>
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><a href="https://github.com/sakshamsaxena/sails-hook-boilerplate"><b>Boilerplate for Sails Hooks</b></a></h2>
 					<p class="lead">Languages Used : JavaScript (Node.js)</p>
 					<blockquote class="projDesc">Developed boilerplate code for an Installable Sails Hook. Uses postinstall scripts to setup the new package and organise the code neatly into a good directory structure.</blockquote>
 				</div>
 			</div>
 			<div class="row t2">
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><a href="https://github.com/sakshamsaxena/Marks"><b>MARKS</b></a></h2>
 					<p class="lead">Languages Used : HTML, CSS, JavaScript</p>
 					<blockquote class="projDesc">MARKS is an acronym for Most Amazing Resource of Knowledge for Students. It was built for juniors to help them find all the necessary material to help them in academics. It had amazing animations written in Greensock (GSAP) and custom CSS. </blockquote>
 				</div>
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><a href="https://github.com/sakshamsaxena/MedievalHub"><b>Medieval Hub</b></a></h2>
 					<p class="lead">Languages Used : HTML, CSS, JavaScript</p>
 					<blockquote class="projDesc">This was my first static website, completely built from scratch. It included a static blog where I wrote some of my new learnings in the field of web designing, along with general articles. Used custom CSS for effects, and added Konami Code Easter Egg as well.</blockquote>
@@ -160,19 +159,19 @@
 			</div>
 			<div class="row t2 marginRow"></div>
 			<div class="row t3">
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><b>Section Student Representative</b></h2>
 					<p class="lead">IEEE Delhi Section</p>
 					<blockquote class="projDesc">Responsible for managing and coordinating all the events, activities, and initiatives at the Delhi Section (consisting of over 40 colleges), aiming to help the IEEE Student Members develop holistically through the benefits which IEEE can provide.</blockquote>
 				</div>
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><b>Mentor and Coordinator</b></h2>
 					<p class="lead">Project WIE Stand</p>
 					<blockquote class="projDesc">Closely mentored the operations of Project WIE Stand, and initiative which is similar to “Google Summer of Code” or “Outreachy” but runs over 6 months instead. It is aimed to empower young women by promoting them to pursue and lead technical projects of their interest. </blockquote>
 				</div>
 			</div>
 			<div class="row t3">
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><b>Head of External Affairs</b></h2>
 					<p class="lead">IEEE DTU</p>
 					<blockquote class="projDesc">Evangelized the various Special Interest Groups of IEEE DTU to increase its reach to other colleges. The key was to motivate these branches to attend the SIGs so that they learn about the subject, as well as become more able to host a similar event in their own college.</blockquote>
@@ -180,31 +179,31 @@
 			</div>
 			<div class="row t3 marginRow"></div>
 			<div class="row t4">
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><b>Associate Software Developer</b></h2>
 					<p class="lead">BCS Technology</p>
 					<blockquote class="projDesc">Lead the Spirit Airlines' A/B Testing Project on Qubit, and developed and delivered high quality JavaScript code to create a parallel user experience. Worked on Jazeera Airways’ Website Redesign Project based on SkySales, a popular MVC architecture based Booking Engine by Navitaire for Airlines. </blockquote>
 				</div>
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><b>GSoC 2017 Student Developer</b></h2>
 					<p class="lead">The Processing Foundation</p>
 					<blockquote class="projDesc">Worked on p5.js library with mentors from New York University. Implemented a Continuous Delivery pipeline using Grunt, and added the option to generate a custom build of the library. These functionalities, completely built on JavaScript and Node.js, have impacted it’s 5000+ users. </blockquote>
 				</div>
 			</div>
 			<div class="row t4">
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><b>GSoC 2016 Student Developer</b></h2>
 					<p class="lead">Open Genome Informatics</p>
 					<blockquote class="projDesc">Worked on JBrowse with mentors from UCLA. Developed a Sails.js Installable Hook which could manage and clone GitHub repositories of synthetic chromosome sequences. </blockquote>
 				</div>
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><b>Web Developer</b></h2>
 					<p class="lead">BadiyaJobs.com</p>
 					<blockquote class="projDesc">Worked in a startup as an intern in developing the website BadiyaJobs.com built on Laravel. Implemented JavaScript functionality on the User Account section. Further helped in chalking out a collaborative development workflow to be used with Git. </blockquote>
 				</div>
 			</div>
 			<div class="row t4">
-				<div class="blog-snips col-sm-6">
+				<div class="proj-snips col-sm-6">
 					<h2><b>Web Developer</b></h2>
 					<p class="lead">SwiftIntern.com</p>
 					<blockquote class="projDesc">Worked in a startup as an intern in restructuring the website SwiftIntern.com. Improved the entire UI with custom CSS effects and BootStrap. </blockquote>

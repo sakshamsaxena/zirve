@@ -1,0 +1,156 @@
+/* Application Styles */
+body {
+    padding-top: 50px;
+    overflow-x: hidden
+}
+
+/*Scrollbar Styles*/
+*::-webkit-scrollbar {
+    width: 0.75em;
+}
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: black;
+    outline: 1px solid gray;
+}
+
+/*Section Pane Styles*/
+.diapo:nth-of-type(1) {
+    background-image: url(../imgs/HBackground.jpg);
+}
+.diapo:nth-of-type(2) {
+    background-image: url(../imgs/ABackground.jpg);
+}
+.diapo:nth-of-type(3) {
+    background-image: url(../imgs/BBackground.jpg)
+}
+.diapo:nth-of-type(4) {
+    background-image: url(../imgs/CBackground.jpg)
+}
+.diapo {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+/*Content Division Styles*/
+.starter-template {
+    background-color: hsla(0, 100%, 100%, 0.4);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 40px 15px 10px;
+    text-align: center;
+    width: 50%;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+.starter-template h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5em
+}
+.t1 {
+    text-align: center
+}
+.t1,
+.t2,
+.t3,
+.t4 {
+    opacity: 0
+}
+blockquote {
+    font-family: 'Bad Script', cursive;
+    font-size: 1.6em;
+    line-height: 1.5em;
+    margin: 0 auto 2em !important;
+    text-align: justify;
+    border-left-color: #1976d2
+}
+
+/*First Section (Home) Styles*/
+.home {
+    margin-left: 2em;
+    margin-right: 0
+}
+.home-brief {
+    text-align: center;
+    margin-bottom: 2em
+}
+.home .t3 a {
+    padding: 0 1em;
+    min-width: 11rem;
+    width: 100%
+}
+i._left {
+    margin-right: -0.5rem;
+    margin-left: -0.5rem
+}
+i._left:nth-of-type(1){
+    margin-right: -0.8rem
+}
+.label{
+    text-align: center;
+    font-size: 1em;
+    vertical-align: text-top;
+}
+.marginRow {
+    height: 4em !important;
+}
+
+/*Second Section (About) Styles*/
+.about {
+    margin-left: 0;
+    margin-right: 2em;
+    float: right;
+}
+
+.about p.lead {
+    font-size: 1.2em;
+    text-align: justify
+}
+.about h1.t1 {
+    margin-bottom: 0
+}
+.about blockquote {
+    margin: -0.25em auto 0.25em !important;
+    border-left-color: #455a64
+}
+
+/*Third Section (Work experience) Styles*/
+.proj,
+.contact {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto
+}
+.projDesc {
+    font-family: Raleway
+}
+.proj .row {
+    margin: 0 !important
+}
+.proj blockquote {
+    border-left-color: #2e7d32
+}
+.proj-snips h2 a {
+    color: #212121
+}
+.proj-snips h2 a:hover {
+    color: #454543
+}
+
+/*Fourth Section (Contact) Styles*/
+.socialHome {
+    margin: 2em auto 6em
+}
+.socialHome i.left {
+    margin-left: 0
+}
+.socialHome i.left:hover {
+    color: black;
+    transition-duration: 0.4s
+}
