@@ -12,7 +12,8 @@ $(window).on("load", function() {
     }, 200);
     if(window.innerWidth < 768){
         $.scrollify.destroy();
-        $(".diapo").css("height", window.innerHeight+50);
+        $(".diapo").css("height", window.innerHeight+60);
+        $(".starter-template").css("height", window.innerHeight-100)
         $(".proj .row span.col-xs-4").attr("class","row");
         $(".socialHome span").each(function(i,el) {
             if($(this).hasClass("col-xs-3"))
@@ -24,15 +25,16 @@ $(window).on("load", function() {
 });
 
 $(function() {
-    $.scrollify({
-        section: ".diapo",
-        scrollbars: true,
-        overflowScroll: true,
-        touchScroll: false,
-        after: function(i, panels) {
-            anim(i, panels)
-        }
-    });
+    if(window.innerWidth >= 768)
+        $.scrollify({
+            section: ".diapo",
+            scrollbars: true,
+            overflowScroll: true,
+            touchScroll: false,
+            after: function(i, panels) {
+                anim(i, panels)
+            }
+        });
 });
 
 // Handlers for Home Page

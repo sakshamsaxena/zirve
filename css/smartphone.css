@@ -28,8 +28,6 @@ body {
     background-position: left;
     position: sticky;
     top: 0;
-    overflow-y: scroll !important;
-    overflow-x: hidden;
 }
 
 /*Content Division Styles*/
@@ -37,20 +35,22 @@ body {
     background-color: hsla(0, 100%, 100%, 0.4);
     border: 2px solid transparent;
     border-radius: 10px;
-    padding: 40px 15px 10px;
+    padding: 10px 15px 10px;
     text-align: center;
     width: 100%;
     color: black;
     font-family: 'Open Sans', sans-serif;
-    margin: 1em auto;
-    /*overflow-y: visible;*/
+    margin: 6em auto 1em;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
 }
 .starter-template h1 {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3.5em
 }
 .t1 {
-    text-align: center
+    text-align: center;
+    margin-top: 0
 }
 blockquote {
     font-family: 'Bad Script', cursive;
