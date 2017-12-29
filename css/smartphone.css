@@ -7,15 +7,15 @@ body {
 
 /*Section Pane Styles*/
 .diapo:nth-of-type(1) {
-    background-image: url(../imgs/HBackground.jpg);
+    background-image: url(../imgs/HBackground_m.jpg);
     z-index: 997;
 }
 .diapo:nth-of-type(2) {
-    background-image: url(../imgs/ABackground.jpg);
+    background-image: url(../imgs/ABackground_m.jpg);
     z-index: 998;
 }
 .diapo:nth-of-type(3) {
-    background-image: url(../imgs/BBackground.jpg);
+    background-image: url(../imgs/BBackground_m.jpg);
     z-index: 999;
 }
 .diapo:nth-of-type(4) {
