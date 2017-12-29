@@ -28,7 +28,8 @@ body {
     background-position: left;
     position: sticky;
     top: 0;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
 }
 
 /*Content Division Styles*/
@@ -42,7 +43,7 @@ body {
     color: black;
     font-family: 'Open Sans', sans-serif;
     margin: 1em auto;
-    overflow-y: visible;
+    /*overflow-y: visible;*/
 }
 .starter-template h1 {
     font-family: 'Josefin Sans', sans-serif;
@@ -66,9 +67,6 @@ blockquote {
 }
 
 /*First Section (Home) Styles*/
-.home {
-    
-}
 .home-brief {
     text-align: center;
     margin-bottom: 2em
@@ -92,8 +90,6 @@ blockquote {
 }
 
 /*Second Section (About) Styles*/
-.about {
-}
 .about h1.t1 {
     margin-bottom: 0
 }
@@ -131,22 +127,17 @@ blockquote {
 }
 
 /*Third Section (Work experience) Styles*/
-.proj,
-.contact {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto
-}
 .projDesc {
     font-family: Raleway
 }
-.proj .row {
+.proj .row.center-block {
     margin: 0 !important
 }
 .proj .center-block a {
     padding: 0 1em;
     min-width: 14.2rem;
-    width: 100%
+    width: 100%;
+    margin-bottom: 0.5rem
 }
 .proj .center-block a .label {
     vertical-align: initial;
@@ -165,9 +156,6 @@ blockquote {
 .proj-snips h2 a {
     color: #212121;
 }
-.proj-snips h2 a:hover {
-    color: #454543
-}
 
 /*Fourth Section (Contact) Styles*/
 .socialHome {
@@ -176,6 +164,9 @@ blockquote {
 .socialHome a.btn-floating.btn-large {
     width: 50px;
     height: 50px
+}
+.socialHome span.col-xs-2 {
+    padding: 0
 }
 .socialHome i.left {
     margin-left: 0

@@ -10,6 +10,17 @@ $(window).on("load", function() {
     setTimeout(function() {
         anim(0, document.getElementsByClassName("diapo"))
     }, 200);
+    if(window.innerWidth < 768){
+        $.scrollify.destroy();
+        $(".diapo").css("height", window.innerHeight+50);
+        $(".proj .row span.col-xs-4").attr("class","row");
+        $(".socialHome span").each(function(i,el) {
+            if($(this).hasClass("col-xs-3"))
+                $(this).remove();
+            if($(this).hasClass("col-xs-1"))
+                $(this).attr("class", "col-xs-2");
+        })
+    }
 });
 
 $(function() {
@@ -22,9 +33,6 @@ $(function() {
             anim(i, panels)
         }
     });
-    if (window.innerWidth < 768) {
-        $.scrollify.disable();
-    }
 });
 
 // Handlers for Home Page
@@ -36,7 +44,7 @@ $(".aboutBtn, .contBtn, .projBtn").click(function(e) {
     return true
 });
 
-// TODO : Update height for all diapo on click
+// TODO : Update height for ALL diapo on click
 // Handlers for About Page
 $(".bio").click(function() {
     $(".about .t2").show();
