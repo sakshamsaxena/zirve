@@ -42,11 +42,15 @@ $(".aboutBtn, .contBtn, .projBtn").click(function(e) {
     //TODO : Write custom jQ style smooth scroll
     if(window.innerWidth > 768) {
         $.scrollify.move(e.target.getAttribute("href"));
+    } else {
+        var destination = $(this).attr("href");
+        destination = destination.substr(1,destination.length-1);
+        var offset = $("[data-section-name='"+destination+"'").offset().top;
+        $("html,body").animate({scrollTop: offset})
     }
     return true
 });
 
-// TODO : Update height for ALL diapo on click
 // Handlers for About Page
 $(".bio").click(function() {
     $(".about .t2").show();
