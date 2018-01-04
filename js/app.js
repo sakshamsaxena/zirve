@@ -40,10 +40,10 @@ $(function() {
 // Handlers for Home Page
 $(".aboutBtn, .contBtn, .projBtn").click(function(e) {
     //TODO : Write custom jQ style smooth scroll
+    var destination = $(this).attr("href");
     if(window.innerWidth > 768) {
-        $.scrollify.move(e.target.getAttribute("href"));
+        $.scrollify.move(destination);
     } else {
-        var destination = $(this).attr("href");
         destination = destination.substr(1,destination.length-1);
         var offset = $("[data-section-name='"+destination+"'").offset().top;
         $("html,body").animate({scrollTop: offset})
