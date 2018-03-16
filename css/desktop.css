@@ -107,9 +107,6 @@ blockquote {
     margin-right: 2em;
     float: right;
 }
-.about h1.t1 {
-    margin-bottom: 0
-}
 .about .row.center-block {
     margin-left: -0.5rem
 }
@@ -162,7 +159,9 @@ blockquote {
 }
 .proj blockquote {
     border-left-color: #2e7d32;
-    font-size: 1.14rem
+    font-size: 1.14rem;
+    background: rgba(255,255,255,0.4);
+    border-radius: 10px;
 }
 .proj-snips h2 {
     font-size: 2.4rem
