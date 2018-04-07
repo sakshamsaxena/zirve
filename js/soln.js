@@ -24,6 +24,7 @@ function populate(li) {
     }
     $("div.home").append(html);
   }
+  $("#loader").remove();
 }
 
 function makeHeader(title) {
