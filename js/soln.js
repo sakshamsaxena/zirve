@@ -35,7 +35,7 @@ function makeBody(num, url, prob_title, code) {
 }
 
 function makeRequest(foldername, index) {
-  var url = './solutions/'+foldername+'/'+index+'.cpp';
+  var url = '/solutions/'+foldername+'/'+index+'.cpp';
   // console.log(url)
   var p = parseInt(index)-1;
   $.ajax({
