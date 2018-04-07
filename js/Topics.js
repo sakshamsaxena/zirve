@@ -1,5 +1,5 @@
 var List = {
-  "Arrays :": [
+  "Arrays": [
     {
       "name": "Kadane’s Algorithm",
       "url": "https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0"
@@ -93,7 +93,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/largest-number-formed-from-an-array/0"
     }
   ],
-  "String :": [
+  "String": [
     {
       "name": "Parenthesis Checker",
       "url": "https://practice.geeksforgeeks.org/problems/parenthesis-checker/0"
@@ -155,7 +155,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/longest-common-prefix-in-an-array/0"
     }
   ],
-  "Linked List :": [
+  "Linked List": [
     {
       "name": "Finding middle element in a linked list",
       "url": "https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1"
@@ -225,7 +225,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1"
     }
   ],
-  "Stack and Queue :": [
+  "Stack and Queue": [
     {
       "name": "Next larger element",
       "url": "https://practice.geeksforgeeks.org/problems/next-larger-element/0"
@@ -259,7 +259,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/rotten-oranges/0"
     }
   ],
-  "Tree :": [
+  "Tree": [
     {
       "name": "Print Left View of Binary Tree",
       "url": "https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1"
@@ -325,7 +325,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1"
     }
   ],
-  "Heap :": [
+  "Heap": [
     {
       "name": "Find median in a stream",
       "url": "https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0"
@@ -351,7 +351,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1"
     }
   ],
-  "Recursion :": [
+  "Recursion": [
     {
       "name": "Flood fill Algorithm",
       "url": "https://practice.geeksforgeeks.org/problems/flood-fill-algorithm/0"
@@ -377,7 +377,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/josephus-problem/1"
     }
   ],
-  "Hashing :": [
+  "Hashing": [
     {
       "name": "Largest subarray with 0 sum",
       "url": "https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1"
@@ -439,7 +439,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/check-frequencies/0"
     }
   ],
-  "Graph :": [
+  "Graph": [
     {
       "name": "Depth First Traversal",
       "url": "https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1"
@@ -501,7 +501,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/snake-and-ladder-problem/0"
     }
   ],
-  "Greedy :": [
+  "Greedy": [
     {
       "name": "Activity Selection",
       "url": "https://practice.geeksforgeeks.org/problems/activity-selection/0"
@@ -563,7 +563,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/geek-collects-the-balls/0"
     }
   ],
-  "Dynamic Programming :": [
+  "Dynamic Programming": [
     {
       "name": "Longest Increasing Subsequence",
       "url": "https://practice.geeksforgeeks.org/problems/longest-increasing-subsequence/0"
@@ -625,7 +625,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/shortest-common-supersequence/0"
     }
   ],
-  "Divide and Conquer :": [
+  "Divide and Conquer": [
     {
       "name": "Binary Search",
       "url": "https://practice.geeksforgeeks.org/problems/binary-search/1"
@@ -651,7 +651,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/last-index-of-1/0"
     }
   ],
-  "Backtracking :": [
+  "Backtracking": [
     {
       "name": "N-Queen Problem",
       "url": "https://practice.geeksforgeeks.org/problems/n-queen-problem/0"
@@ -673,7 +673,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/generate-ip-addresses/1"
     }
   ],
-  "Bit Magic :": [
+  "Bit Magic": [
     {
       "name": "Find first set bit",
       "url": "https://practice.geeksforgeeks.org/problems/find-first-set-bit/0"
@@ -731,24 +731,4 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/maximum-subset-xor/1"
     }
   ]
-}
-
-for(var item in List) {
-  var title = item;
-  var html = '';
-  html+=makeHeader(title);
-  var arr = List[item];
-  for(var i = 0; i < arr.length; i++) {
-    var o = arr[i];
-    html+=makeBody(i+1, o.url, o.name)
-  }
-  $("div.home").append(html);
-}
-
-function makeHeader(title) {
-  return '<div class="t3"><h2 class="t1">'+title+'</h2>'
-}
-
-function makeBody(num, url, prob_title) {
-  return '<p class="lead"><strong>'+num+'. <a href="'+url+'">'+prob_title+'</a></strong><blockquote>Foozie</blockquote></p></div>'
 }
