@@ -58,7 +58,7 @@ body {
 .t1 {
     text-align: center
 }
-blockquote {
+pre {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.36em;
     line-height: 1.5em;

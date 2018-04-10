@@ -32,17 +32,28 @@ function makeHeader(title) {
 }
 
 function makeBody(num, url, prob_title, code) {
-  return '<p class="lead"><strong>'+num+'. <a href="'+url+'">'+prob_title+'</a></strong><blockquote>'+code+'</blockquote></p></div>'
+  return '<p class="lead"><strong>'+num+'. <a href="'+url+'">'+prob_title+'</a></strong><pre>'+code+'</pre></p></div>'
 }
 
 function makeRequest(foldername, index) {
   var url = '/solutions/'+foldername+'/'+index+'.cpp';
-  // console.log(url)
   var p = parseInt(index)-1;
   $.ajax({
     url: url,
     success: function (data) {
       var d = data;
+      while(d !== d.replace("\r\n", "<br>")) {
+        d = d.replace("\r\n", "<br>");
+        console.log("Replaced CRLF");
+      }
+      while(d !== d.replace("\n", "<br>")) {
+        d = d.replace("\n", "<br>");
+        console.log("Replaced LF");
+      }
+      while(d !== d.replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;")) {
+        d = d.replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;");
+        console.log("Replaced TAB");
+      }
       (List[foldername])[p].code = d;
     },
     error: function() {
