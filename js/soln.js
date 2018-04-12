@@ -54,6 +54,14 @@ function makeRequest(foldername, index) {
         d = d.replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;");
         console.log("Replaced TAB");
       }
+      while(d !== d.replace("<", "&lt;")) {
+        d = d.replace("<", "&lt;");
+        console.log("Replaced <");
+      }
+      while(d !== d.replace(">", "&gt;")) {
+        d = d.replace(">", "&gt;");
+        console.log("Replaced >");
+      }
       (List[foldername])[p].code = d;
     },
     error: function() {
