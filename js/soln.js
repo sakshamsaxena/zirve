@@ -67,7 +67,7 @@ function makeRequest(Item, index) {
 			console.log("Loaded : " + url);
 		},
 		error: function() {
-			console.log('not found')
+			console.log('Not Found : ' + url);
 		},
 		complete: function() {
 			if (foldername === LastKey.replace(" ", "") && index === LastArrayLength) {

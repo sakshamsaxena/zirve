@@ -1,6 +1,7 @@
 /*
 	Problem:
-	Given an unsorted array of non-negative integers, find a contiguous sub-array which adds to a given number.
+	Given an unsorted array of non-negative integers.
+	Find a contiguous sub-array which adds to a given number.
 */
 #include <iostream>
 using namespace std;

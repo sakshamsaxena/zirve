@@ -1,6 +1,8 @@
 /*
 	Problem:
-	Given an array of n positive integers. Write a program to find the sum of maximum sum subsequence of the given array such that the integers in the subsequence are sorted in increasing order.
+	Given an array of n positive integers.
+	Find the sum of maximum sum subsequence of the given array such that
+	the integers in the subsequence are sorted in increasing order.
 */
 #include <iostream>
 using namespace std;

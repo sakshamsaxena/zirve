@@ -1,6 +1,7 @@
 /*
 	Problem :
-	Write a program to print all the LEADERS in the array. An element is leader if it is greater than all the elements to its right side. The rightmost element is always a leader. 
+	Write a program to print all the LEADERS in the array.
+	An element is leader if it is greater than all the elements to its right side
 */
 #include <iostream>
 #include <vector>
