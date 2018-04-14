@@ -35,7 +35,8 @@ function makeBody(num, url, prob_title, code) {
   return '<p class="lead"><strong>'+num+'. <a href="'+url+'">'+prob_title+'</a></strong><pre>'+code+'</pre></p></div>'
 }
 
-function makeRequest(foldername, index) {
+function makeRequest(Item, index) {
+  var foldername = Item.toString().replace(" ","");
   var url = '/solutions/'+foldername+'/'+index+'.cpp';
   var p = parseInt(index)-1;
   $.ajax({
@@ -62,7 +63,7 @@ function makeRequest(foldername, index) {
         d = d.replace("\n", "<br>");
         console.log("Replaced LF");
       }
-      (List[foldername])[p].code = d;
+      (List[Item])[p].code = d;
     },
     error: function() {
       console.log('not found')
@@ -76,11 +77,10 @@ function makeRequest(foldername, index) {
 }
 
 for(var Item in List) {
-  var foldername = Item.toString().replace(" ","");
   var arr = List[Item];
   for(var k = 0; k < arr.length; k++) {
     var obj = arr[k];
     var index = k+1;
-    makeRequest(foldername, index);
+    makeRequest(Item, index);
   }
 }
