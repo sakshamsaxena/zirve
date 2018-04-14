@@ -6,6 +6,7 @@ var LastArrayLength = LastArray.length;
 var LastArrayLastObject = LastArray[LastArrayLength - 1];
 
 function populate(li) {
+	console.log("Populating HTML");
 	var flag;
 	for (var item in li) {
 		var title = item;
@@ -63,6 +64,7 @@ function makeRequest(Item, index) {
 				console.log("Replaced LF");
 			}
 			(List[Item])[p].code = d;
+			console.log("Loaded : " + url);
 		},
 		error: function() {
 			console.log('not found')
