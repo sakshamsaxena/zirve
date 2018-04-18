@@ -225,7 +225,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1"
     }
   ],
-  "Stack and Queue": [
+  "Stack And Queue": [
     {
       "name": "Next larger element",
       "url": "https://practice.geeksforgeeks.org/problems/next-larger-element/0"
@@ -625,7 +625,7 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/shortest-common-supersequence/0"
     }
   ],
-  "Divide and Conquer": [
+  "Divide And Conquer": [
     {
       "name": "Binary Search",
       "url": "https://practice.geeksforgeeks.org/problems/binary-search/1"

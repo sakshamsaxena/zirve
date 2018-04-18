@@ -36,7 +36,10 @@ function makeBody(num, url, prob_title, code) {
 }
 
 function makeRequest(Item, index) {
-	var foldername = Item.toString().replace(" ", "");
+	var foldername = Item;
+	while(foldername !== foldername.toString().replace(" ", "")) {
+		foldername = foldername.toString().replace(" ", "");
+	}
 	var url = '/solutions/' + foldername + '/' + index + '.cpp';
 	var p = parseInt(index) - 1;
 	$.ajax({
