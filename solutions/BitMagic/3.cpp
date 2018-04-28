@@ -6,9 +6,15 @@
 */
 #include <iostream>
 using namespace std;
-
+/*
+To check if a bit is set or not, we AND it with 1. 
+To check this at K'th position, we will simply shift 
+1 by K places, and then perform an AND of this with
+the original number, so see if the result is 0 or 1.
+If it's 1 then it means the AND resulted in 1 and that
+is what we need to determine in this question.
+*/
 int main() {
-	//code
 	int T;
 	cin >> T;
 	while(T--) {

@@ -6,7 +6,12 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-
+/*
+First, we'll XOR both to get a set bit when the bits differ.
+Then, it's the previous problem : Find the position of this 
+set bit. Do a 2's complement of this XOR'd result, and get 
+the required position.
+*/
 int main() {
 	int T;
 	cin >> T;
