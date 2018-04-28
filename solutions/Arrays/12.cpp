@@ -1,44 +1,40 @@
+/*
+	Problem :
+	Given n non-negative integers in array representing an elevation map.
+	Compute how much water it is able to trap after raining.
+*/
 #include <iostream>
 using namespace std;
 
 int main() {
-	//code
 	int T;
 	cin >> T;
-	while (T--) {
+	while(T--) {
 		int N;
 		cin >> N;
 		int arr[N];
-		for (int i = 0; i < N; i++) {
+		for(int i = 0; i < N; i++) {
 			cin >> arr[i];
 		}
-		// initialize output
+		// Left and Right arrays to hold max values
+		int L[N];
+		int R[N];
+		
+		// Fill Left Array
+		L[0] = arr[0];
+		for(int i = 1; i < N; i++) {
+			L[i] = max(L[i-1], arr[i]);
+		}
+		// Fill Right Array
+		R[N-1] = arr[N-1];
+		for(int i = N-2; i >= 0; i--) {
+			R[i] = max(R[i+1], arr[i]);
+		}
+		
+		// Water at any point in array will be min of L/R value minus the current value
 		int result = 0;
-
-		// maximum element on left and right
-		int left_max = 0, right_max = 0;
-
-		// indices to traverse the array
-		int lo = 0, hi = N - 1;
-
-		while (lo <= hi) {
-			if (arr[lo] < arr[hi]) {
-				if (arr[lo] > left_max)
-					// update max in left
-					left_max = arr[lo];
-				else
-					// water on curr element = max - curr
-					result += left_max - arr[lo];
-				lo++;
-			}
-			else {
-				if (arr[hi] > right_max)
-					// update right maximum
-					right_max = arr[hi];
-				else
-					result += right_max - arr[hi];
-				hi--;
-			}
+		for(int i = 0; i < N; i++) {
+			result += min(L[i], R[i]) - arr[i];
 		}
 		cout << result << endl;
 	}
