@@ -4,6 +4,7 @@ var LastKey = (Keys[Length - 1]);
 var LastArray = List[LastKey];
 var LastArrayLength = LastArray.length;
 var LastArrayLastObject = LastArray[LastArrayLength - 1];
+var Pending = [];
 
 function populate(li) {
 	console.log("Populating HTML");
@@ -19,12 +20,15 @@ function populate(li) {
 			if (o.code) {
 				html += makeBody(i + 1, o.url, o.name, o.code);
 				flag = 0;
+			} else {
+				Pending.push(item + " : " + o.name);
 			}
 		}
 		if (flag == 0)
 			$("div.home").append(html + '</div>');
 	}
 	$("#loader").remove();
+	console.log(Pending);
 }
 
 function makeHeader(title) {
