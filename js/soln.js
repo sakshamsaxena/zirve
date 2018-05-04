@@ -7,7 +7,7 @@ var LastArrayLastObject = LastArray[LastArrayLength - 1];
 var Pending = [];
 
 function populate(li) {
-	console.log("Populating HTML");
+	console.log("Populating HTML ...");
 	var flag;
 	for (var item in li) {
 		var title = item;
@@ -52,23 +52,18 @@ function makeRequest(Item, index) {
 			var d = data;
 			while (d !== d.replace("<", "&lt;")) {
 				d = d.replace("<", "&lt;");
-				console.log("Replaced <");
 			}
 			while (d !== d.replace(">", "&gt;")) {
 				d = d.replace(">", "&gt;");
-				console.log("Replaced >");
 			}
 			while (d !== d.replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;")) {
 				d = d.replace("\t", "&nbsp;&nbsp;&nbsp;&nbsp;");
-				console.log("Replaced TAB");
 			}
 			while (d !== d.replace("\r\n", "<br>")) {
 				d = d.replace("\r\n", "<br>");
-				console.log("Replaced CRLF");
 			}
 			while (d !== d.replace("\n", "<br>")) {
 				d = d.replace("\n", "<br>");
-				console.log("Replaced LF");
 			}
 			(List[Item])[p].code = d;
 			console.log("Loaded : " + url);

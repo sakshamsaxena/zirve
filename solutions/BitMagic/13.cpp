@@ -9,7 +9,7 @@ using namespace std;
 XORing a sequence of numbers works the same.
 If there are duplicates then it will give 0.
 Anything XORd with a 0 gives back the number.
-Since all are duplicates except one, the 
+Since all are duplicates except one, the
 duplicates will produce 0 and finally it will
 XOR with the odd one out to produce the same
 number, which will be our result.
