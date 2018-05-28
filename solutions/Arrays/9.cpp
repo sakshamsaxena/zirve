@@ -25,21 +25,20 @@ int main() {
 		cout << max << " ";
 		for(int i = K; i < N; i++) {
 			int newNum = arr[i];
-			// If max was in between window
-			if(max != arr[i-K]) {
-				if(newNum > max) {
-					max = newNum;
-				}
+			if(newNum > max) {
+				max = newNum;
 			} else {
-				if(newNum > max) {
-					max = newNum;
-				} else {
+				if(max == arr[i-K]) {
+					// It is at the lost index
 					max = -1;
 					for(int j = i+1-K; j < i+1; j++) {
 						if(arr[j] > max) {
 							max = arr[j];
 						}
 					}
+				} else {
+					// It was somewhere in between only,
+					// So it will be unchanged. No computation.
 				}
 			}
 			cout << max << " ";
