@@ -351,32 +351,6 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1"
     }
   ],
-  "Recursion": [
-    {
-      "name": "Flood fill Algorithm",
-      "url": "https://practice.geeksforgeeks.org/problems/flood-fill-algorithm/0"
-    },
-    {
-      "name": "Number of paths",
-      "url": "https://practice.geeksforgeeks.org/problems/number-of-paths/0"
-    },
-    {
-      "name": "Combination Sum – Part 2",
-      "url": "https://practice.geeksforgeeks.org/problems/combination-sum-part-2/0"
-    },
-    {
-      "name": "Special Keyboard",
-      "url": "https://practice.geeksforgeeks.org/problems/special-keyboard/0"
-    },
-    {
-      "name": "Water Overflow",
-      "url": "https://practice.geeksforgeeks.org/problems/champagne-overflow/0"
-    },
-    {
-      "name": "Josephus problem",
-      "url": "https://practice.geeksforgeeks.org/problems/josephus-problem/1"
-    }
-  ],
   "Hashing": [
     {
       "name": "Largest subarray with 0 sum",
@@ -501,68 +475,6 @@ var List = {
       "url": "https://practice.geeksforgeeks.org/problems/snake-and-ladder-problem/0"
     }
   ],
-  "Greedy": [
-    {
-      "name": "Activity Selection",
-      "url": "https://practice.geeksforgeeks.org/problems/activity-selection/0"
-    },
-    {
-      "name": "N meetings in one room",
-      "url": "https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room/0"
-    },
-    {
-      "name": "Coin Piles",
-      "url": "https://practice.geeksforgeeks.org/problems/coin-piles/0"
-    },
-    {
-      "name": "Minimum number of Coins",
-      "url": "https://practice.geeksforgeeks.org/problems/-minimum-number-of-coins/0"
-    },
-    {
-      "name": "Maximize Toys",
-      "url": "https://practice.geeksforgeeks.org/problems/maximize-toys/0"
-    },
-    {
-      "name": "Page Faults in LRU",
-      "url": "https://practice.geeksforgeeks.org/problems/page-faults-in-lru/0"
-    },
-    {
-      "name": "Largest number possible",
-      "url": "https://practice.geeksforgeeks.org/problems/largest-number-possible/0"
-    },
-    {
-      "name": "Minimize the heights",
-      "url": "https://practice.geeksforgeeks.org/problems/minimize-the-heights/0"
-    },
-    {
-      "name": "Minimize the sum of product",
-      "url": "https://practice.geeksforgeeks.org/problems/minimize-the-sum-of-product/0"
-    },
-    {
-      "name": "Huffman Decoding",
-      "url": "https://practice.geeksforgeeks.org/problems/huffman-decoding-1/1"
-    },
-    {
-      "name": "Max length chain",
-      "url": "https://practice.geeksforgeeks.org/problems/max-length-chain/1"
-    },
-    {
-      "name": "Minimum Spanning Tree",
-      "url": "https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1"
-    },
-    {
-      "name": "Minimum Operations",
-      "url": "https://practice.geeksforgeeks.org/problems/find-optimum-operation/0"
-    },
-    {
-      "name": "Shop in Candy Store",
-      "url": "https://practice.geeksforgeeks.org/problems/shop-in-candy-store/0"
-    },
-    {
-      "name": "Geek collects the balls",
-      "url": "https://practice.geeksforgeeks.org/problems/geek-collects-the-balls/0"
-    }
-  ],
   "Dynamic Programming": [
     {
       "name": "Longest Increasing Subsequence",
@@ -649,28 +561,6 @@ var List = {
     {
       "name": "Last index of One",
       "url": "https://practice.geeksforgeeks.org/problems/last-index-of-1/0"
-    }
-  ],
-  "Backtracking": [
-    {
-      "name": "N-Queen Problem",
-      "url": "https://practice.geeksforgeeks.org/problems/n-queen-problem/0"
-    },
-    {
-      "name": "Solve the Sudoku",
-      "url": "https://practice.geeksforgeeks.org/problems/solve-the-sudoku/0"
-    },
-    {
-      "name": "Rat in a Maze Problem",
-      "url": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1"
-    },
-    {
-      "name": "Word Boggle",
-      "url": "https://practice.geeksforgeeks.org/problems/word-boggle/0"
-    },
-    {
-      "name": "Generate IP Addresses",
-      "url": "https://practice.geeksforgeeks.org/problems/generate-ip-addresses/1"
     }
   ],
   "Bit Magic": [
