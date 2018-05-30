@@ -6,10 +6,11 @@
    and heapify()
 void heapSort(int arr[], int n) {
 	buildHeap(arr, n);
-	// SWAP AND HEAPIFY FIRST INDEX WITH ITH (IT STARTS FROM END)
-	// BECAUSE EACH HEAPIFY ENSURES AT LEAST THAT
-	// THE FIRST INDEX HAS THE MAX VALUE IN 0-ITH SUB ARRAY. 
-	// THIS IS HOW YOU SORT BRUH.
+	// Swap and heapify first index (max value) with ith (starting
+	// from end) because each heapify called here does only one
+	// traversal down the tree from the root and swaps, thereby
+	// not always rechecking "INTERMEDIATE" subtrees after swaps.
+	// See the heapify notes below.
 	for (int i=n-1; i>=0; i--) {
 		swap(arr[0], arr[i]);
 		heapify(arr, i, 0);
@@ -28,13 +29,20 @@ void heapify(int arr[], int n, int i) {
 		max = r;
 	}
 	
+	// Note that the traversal is "vertical" and not all nodes
+	// in the same level are picked in a single traversal. 
+	// That's exactly why we have used loops above to call for
+	// each node.
 	if(max != i) {
 		swap(arr[i], arr[max]); // make the subtree a max heap
-		heapify(arr,n,max); // Heapify trees under this subtree, thus
+		heapify(arr,n,max); // Heapify trees UNDER this subtree, thus
 	}
 }
-// It's important to build a heap at least once as the first step
-// To ensure at least the first index has the overall max value.
+// It's important to build a heap at least once as the first step.
+// By traversing the tree BOTTOM UP, it ensures that the max value
+// reaches the root node while the tree satisfies the HEAP CONDITION
+// which is to have children lesser than parent. Bottom up approach
+// ensures this, and thus it is the first step we do in Heap Sort.
 void buildHeap(int arr[], int n) {
 	int ind = n/2 - 1; // so that r is at the edge
 	// Right half will always have only leaves
