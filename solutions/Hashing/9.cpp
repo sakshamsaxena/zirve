@@ -23,12 +23,15 @@ int main() {
 		int count = 0;
 		while(it!=m.end()) {
 			if(it->second > 1) {
-				// This is when an intermediate sum went to 0
-				// Or arrived at another intermediate sum, meaning
-				// that in between some numbers summed to the 0.
 				int f = it->second;
-				// N such occurances means C(N,2) ways to make such subarrays.
-				count += ((f)*(f-1)) / 2;
+				f = f - 1;
+				// This means that f contiguous subarrays with sum 0
+				// were found. Number of ways to form subarrays from
+				// these f basic subarrays is f(f+1)/2. Here's how :
+				// {S1,S2,S3,S4} (4), {S1+S2, S2+S3, S3+S4} (3),
+				// {S1+S2+S3, S2+S3+S4} (2), {S1+S2+S3+S4} (1). 
+				// That is, 4+3+2+1, which is 4*(4+1)/2 = 10
+				count += ((f)*(f+1)) / 2;
 			}
 			it++;
 		}
