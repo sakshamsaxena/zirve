@@ -1,27 +1,34 @@
 {
-  "name": "zirve",
-  "version": "0.0.0",
-  "description": "Front End of My Blog",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sakshamsaxena/zirve.git"
-  },
-  "author": "Saksham Saxena",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sakshamsaxena/zirve/issues"
-  },
-  "homepage": "https://github.com/sakshamsaxena/zirve#readme",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.1.1",
-    "jquery-scrollify": "1.0.6",
-    "materialize-css": "^0.97.8",
-    "mdi": "^1.8.36"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
