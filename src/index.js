@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Terminal from './components/js/main'
-
-// ========================================
+import App from './component/App';
+import './index.css';
 
 ReactDOM.render(
-  <Terminal />,
+  <App />,
   document.getElementById('root')
 );

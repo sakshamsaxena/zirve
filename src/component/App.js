@@ -1,8 +1,8 @@
 import React from "react";
 import {hot} from "react-hot-loader";
-import '../css/main.css';
+import './App.css';
 
-class Terminal extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -77,4 +77,4 @@ class Prompt extends React.Component {
   }
 }
 
-export default hot(module)(Terminal);
+export default hot(module)(App);

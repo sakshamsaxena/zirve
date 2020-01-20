@@ -1,19 +1,15 @@
+html {
+  height: 100%;
+  font-size: 1.5rem;
+}
+
 body {
+  background-color: black;
   margin: 20px;
+  font-family: sans-serif;
+  height: 100%;
 }
 
-.core-terminal {
-  background-color: #606060;
-  width: 50%;
-  margin: 20px auto;
-  padding: 15px;
-}
-
-.core-buffer {
-  font: 1em monospace;
-}
-
-.core-prompt {
-  font: 1em monospace;
-  color: black;
+#root {
+  height: 100%;
 }
