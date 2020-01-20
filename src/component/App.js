@@ -1,5 +1,6 @@
 import React from "react";
 import {hot} from "react-hot-loader";
+import CommandSanitizer from "../logic/sanitizer";
 import './App.css';
 
 class App extends React.Component {
@@ -17,6 +18,7 @@ class App extends React.Component {
         output: 'hello',
         id: Date.now() + t
       }
+      let p = CommandSanitizer(t);
       let u = this.state.buffers.length ? this.state.buffers.concat([buffer]) : [buffer];
       this.setState({ buffers: u });
       document.getElementsByClassName('core-prompt')[0].value = '';
