@@ -1,10 +1,10 @@
-import Cmd from "../types/command";
+import Cmd from "../types/cmd";
 /**
- * Command Sanitizer checks if the input command is a valid command or not.
+ * Input Sanitizer checks if the input command is valid or not.
  * @param {string} stdin The input as received from user via Prompt.
  * @return {string} more description
  */
-export default function CommandSanitizer(stdin) {
+export default function InputSanitizer(stdin) {
   stdin = stdin.split(" ");
   let cmds = [];
   for (let index = 0; index < stdin.length; index++) {
@@ -12,11 +12,11 @@ export default function CommandSanitizer(stdin) {
     let inputRegExp = new RegExp(/([a-zA-Z]{1,})/, "g");
     let matches = inputRegExp.exec(input);
     if (matches === null || matches.length === 0) {
-      // Ignore
+      // Input should not have any undesired chars
       return new Cmd();
     }
     if (matches.length === 2 && matches[0] === matches[1]) {
-      // valid stdin token
+      // Valid stdin
       cmds.push(matches[0]);
     }
   }
