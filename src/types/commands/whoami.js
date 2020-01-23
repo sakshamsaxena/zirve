@@ -6,6 +6,9 @@ class Whoami {
     this.arguments = a;
     return a.length === 0;
   }
+  getInput() {
+    return "$ whoami";
+  }
   getOutput() {
     return "Saksham Saxena";
   }

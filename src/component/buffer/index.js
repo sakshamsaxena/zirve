@@ -6,8 +6,7 @@ class Buffer extends React.Component {
     let buffers = vals.map(p => {
       return (
         <div key={p.id} className="single-buffer">
-          <Command value={p.command}></Command>
-          <Output value={p.output}></Output>
+          <Output value={p}></Output>
         </div>
       );
     });
@@ -17,26 +16,20 @@ class Buffer extends React.Component {
 
 class Output extends React.Component {
   render() {
+    let input = this.props.value.command;
     let output = "";
-    let cls = this.props.value.Command;
+    let cls = this.props.value.output.Command;
     if (cls === null) {
+      input = "$ " + input;
       output = "Bhakchodi mat pel bsdk";
     } else {
+      input = cls.getInput();
       output = cls.getOutput();
     }
     return (
       <div className="buffer-output">
-        {output}
-      </div>
-    );
-  }
-}
-
-class Command extends React.Component {
-  render() {
-    return (
-      <div className="buffer-command">
-        {this.props.value}
+        <div className="buffer-line">{input}</div>
+        <div className="buffer-line">{output}</div>
       </div>
     );
   }
