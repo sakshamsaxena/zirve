@@ -1,10 +1,13 @@
 class Whoami {
+  constructor() {
+    this.arguments = []
+  }
   validateArgs(a) {
-    return true || a;
-    // if (a === []) {
-    //   return true;
-    // }
-    // return false;
+    this.arguments = a;
+    return a.length === 0;
+  }
+  getOutput() {
+    return "Saksham Saxena";
   }
 }
 

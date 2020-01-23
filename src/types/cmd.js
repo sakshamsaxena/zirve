@@ -11,13 +11,10 @@ class Cmd {
       return
     }
     this.Command = cmd
-    console.log(this.Command)
     let args = this.isValidArgumentArray(a);
     if (!args) {
-      console.log('here ?')
       this.Command = null;
     }
-    console.log(cmd)
   }
   isValidCommandString(c) {
     if (typeof c !== "string") {
@@ -38,7 +35,6 @@ class Cmd {
   }
   isValidArgumentArray(a) {
     if (this.Command === null) {
-      console.log('it null')
       return false;
     }
     return this.Command.validateArgs(a);
