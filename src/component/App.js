@@ -13,15 +13,15 @@ class App extends React.Component {
   }
   checkPrompt(e) {
     if (e.keyCode === 13 || e.charCode === 13) {
-      let t = e.target.value;
-      let p = InputSanitizer(t);
+      let stdin = e.target.value;
+      let cmdClass = InputSanitizer(stdin);
       let buffer = {
-        command: t,
-        output: p,
-        id: Date.now() + t
+        command: stdin,
+        output: cmdClass,
+        id: Date.now() + stdin
       }
-      let u = this.state.buffers.length ? this.state.buffers.concat([buffer]) : [buffer];
-      this.setState({ buffers: u });
+      let updatedBuffers = this.state.buffers.length ? this.state.buffers.concat([buffer]) : [buffer];
+      this.setState({ buffers: updatedBuffers });
       document.getElementsByClassName('core-prompt')[0].value = '';
       return false;
     }
