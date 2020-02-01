@@ -1,15 +1,23 @@
 .core-terminal {
-  background-color: #606060;
   width: 50%;
   margin: 20px auto;
   padding: 15px;
 }
 
 .core-buffer {
-  font: 1em monospace;
+  font: 1em;
 }
 
 .core-prompt {
-  font: 1em monospace;
-  color: black;
+  font-size: 1em;
+  color: #2db82d;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid greenyellow;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 5px;
+}
+
+.buffer-line {
+  color: #2db82d;
 }
