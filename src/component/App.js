@@ -2,13 +2,18 @@ import React from "react";
 import {hot} from "react-hot-loader";
 import InputSanitizer from "../logic/sanitizer";
 import Buffer from "./buffer";
+import Cmd from "../types/cmd";
 import './App.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      buffers: []
+      buffers: [{
+        command: "init",
+        output: new Cmd("init", []),
+        id: Date.now() + "init"
+      }]
     };
   }
   checkPrompt(e) {
