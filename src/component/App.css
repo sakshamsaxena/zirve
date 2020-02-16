@@ -37,3 +37,10 @@ input:focus {
   color: #2db82d;
   margin-right: 0.6em;
 }
+
+@media screen and (max-width: 768px) {
+  .core-terminal {
+    width: 90%;
+    /* margin: ; */
+  }
+}
