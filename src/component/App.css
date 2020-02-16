@@ -19,10 +19,16 @@ input:focus {
   background: transparent;
   border: none;
   border-bottom: 2px solid greenyellow;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Ubuntu', sans-serif; */
   margin-top: 5px;
 }
 
 .buffer-line {
   color: #2db82d;
+}
+
+.buffer-line p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
