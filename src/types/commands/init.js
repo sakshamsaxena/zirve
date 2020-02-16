@@ -17,10 +17,16 @@ class Init {
         <p>This is my personal website in a (nut)shell.</p>
         <p>Hope you enjoy your session.</p>
         <br/>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;Quick Links:</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume : </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub : </p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email : </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Quick Links</b></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume&nbsp;: </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub&nbsp;: </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;: </p>
+        <br/>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Commands Available</b></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whoami</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ls [-R] [DIRECTORY]</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tree [DIRECTORY]</p>
+        <br/>
       </div>
     );
   }

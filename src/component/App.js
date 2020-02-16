@@ -45,7 +45,7 @@ class App extends React.Component {
 class Prompt extends React.Component {
   render() {
     return (
-      <input type="text" className="core-prompt" onKeyPress={(e) => this.props.onKeyPress(e)}></input>
+      <span><span className="dollar">$</span><input type="text" className="core-prompt" onKeyPress={(e) => this.props.onKeyPress(e)}></input></span>
     );
   }
 }

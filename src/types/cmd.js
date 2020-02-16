@@ -1,7 +1,6 @@
 import Whoami from "./commands/whoami";
-import Which from "./commands/which";
 import Tree from "./commands/tree";
-import Wget from "./commands/wget";
+import Ls from "./commands/ls";
 import Init from "./commands/init";
 
 class Cmd {
@@ -23,9 +22,8 @@ class Cmd {
     }
     const validCmds = [
       { cmdStr: "Whoami", cmdCls: Whoami },
-      { cmdStr: "Which", cmdCls: Which },
       { cmdStr: "Tree", cmdCls: Tree },
-      { cmdStr: "Wget", cmdCls: Wget },
+      { cmdStr: "Ls", cmdCls: Ls },
       { cmdStr: "Init", cmdCls: Init }
     ];
     for (let index = 0; index < validCmds.length; index++) {
