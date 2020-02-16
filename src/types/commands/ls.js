@@ -1,3 +1,4 @@
+import React from "react";
 class Ls {
   constructor() {
     this.arguments = []
@@ -10,7 +11,13 @@ class Ls {
     return "$ ls";
   }
   getOutput() {
-    return "listing of stuff";
+    return (
+      <div>
+        <p>experience</p>
+        <p>education</p>
+        <p>bhakchodi</p>
+      </div>
+    );
   }
 }
 

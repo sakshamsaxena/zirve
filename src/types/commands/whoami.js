@@ -1,3 +1,4 @@
+import React from "react";
 class Whoami {
   constructor() {
     this.arguments = []
@@ -10,7 +11,14 @@ class Whoami {
     return "$ whoami";
   }
   getOutput() {
-    return "Saksham Saxena";
+    return (
+      <div>
+        <p>##############################</p>
+        <p># Hi, I'm Saksham Saxena. &nbsp;&nbsp;&nbsp;#</p>
+        <p># Something about me etc etc #</p>
+        <p>##############################</p>
+      </div>
+    );
   }
 }
 

@@ -1,3 +1,4 @@
+import React from "react";
 class Tree {
   constructor() {
     this.arguments = []
@@ -10,7 +11,13 @@ class Tree {
     return "$ tree";
   }
   getOutput() {
-    return "tree view";
+    return (
+      <div>
+        <p>experience</p>
+        <p>education</p>
+        <p>bhakchodi</p>
+      </div>
+    );
   }
 }
 
