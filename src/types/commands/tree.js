@@ -2,10 +2,22 @@ import React from "react";
 class Tree {
   constructor() {
     this.arguments = []
+    this.directories = ["Experience", "Education", "Achievements"]
   }
   validateArgs(a) {
     this.arguments = a;
-    return a.length === 0;
+    if (a.length > 1) {
+      return false;
+    }
+    if (a[0] !== undefined && a[0] !== null) {
+      // Validate Directory
+      for (var i = 0; i < this.directories.length; i++) {
+        if (this.directories[i].toLowerCase() === a[1].toLowerCase()) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
   getInput() {
     return "$ tree";
@@ -13,9 +25,9 @@ class Tree {
   getOutput() {
     return (
       <div>
-        <p>├──Work Experience</p>
+        <p>├──Experience</p>
         <p>├──Education</p>
-        <p>├──Social</p>
+        <p>└──Achievements</p>
       </div>
     );
   }
