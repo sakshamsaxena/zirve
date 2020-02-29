@@ -3,7 +3,7 @@ class Ls {
   constructor() {
     this.arguments = []
     this.mode = "plain"
-    this.directories = ["Experience", "Education", "Achievements"]
+    this.directories = ["experience", "education", "achievements"]
   }
   validateArgs(a) {
     this.arguments = a;
@@ -45,13 +45,35 @@ class Ls {
     return base;
   }
   getOutput() {
-    return (
-      <div>
-        <p>Experience</p>
-        <p>Education</p>
-        <p>Achievements</p>
-      </div>
-    );
+    let dirMap = {
+      "experience":["SoftDev at Zomato from X to Y", "Ass Soft Dev at BCS from A to B"],
+      "education": ["B.Tech in Engineering Physics from DTU, 2017"]
+    }
+    if (this.arguments.length === 0) {
+      return (
+        <div>
+          <p>Experience</p>
+          <p>Education</p>
+          <p>Achievements</p>
+        </div>
+      );
+    }
+    if (this.arguments.length === 1) {
+      if (this.mode === "plain") {
+        // ls dir
+        let contents = dirMap[this.arguments[0].toLowerCase()]
+        var output = []
+        for (var i = 0; i < contents.length; i++) {
+          console.log(contents[i])
+          output.push(<p>{contents[i]}</p>)
+        }
+        return (
+          <div>
+            {output}
+          </div>
+        )
+      }
+    }
   }
 }
 
