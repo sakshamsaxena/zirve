@@ -13,9 +13,9 @@ class Tree {
   getOutput() {
     return (
       <div>
-        <p>experience</p>
-        <p>education</p>
-        <p>bhakchodi</p>
+        <p>├──Work Experience</p>
+        <p>├──Education</p>
+        <p>├──Social</p>
       </div>
     );
   }

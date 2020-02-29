@@ -21,7 +21,7 @@ class Output extends React.Component {
     let cls = this.props.value.output.Command;
     if (cls === undefined|| cls === null) {
       input = "$ " + input;
-      output = "Bhakchodi mat pel bsdk";
+      output = "Sorry, didn't get that.";
     } else {
       input = cls.getInput();
       output = cls.getOutput();
