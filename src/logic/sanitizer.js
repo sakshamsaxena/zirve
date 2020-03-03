@@ -1,4 +1,5 @@
-import Cmd from "../types/cmd";
+import Command from "../types/command";
+
 /**
  * Input Sanitizer checks if the input command is valid or not.
  * @param {string} stdin The input as received from user via Prompt.
@@ -15,12 +16,12 @@ export default function InputSanitizer(stdin) {
     let matches = inputRegExp.exec(stdin[index]);
 
     if (matches === null || matches.length === 0) {
-      // Input should not have any undesired chars
-      return new Cmd();
+      // Input should not have any undesired characters
+      return new Command();
     }
 
     if (matches.length === 2 && matches[0] === matches[1]) {
-      // Valid stdin
+      // Valid input that matches a valid command.
       cmds.push(matches[0]);
     }
   }
@@ -29,12 +30,12 @@ export default function InputSanitizer(stdin) {
   switch (cmds.length) {
     case 0:
       // Noop
-      return new Cmd();
+      return new Command();
     case 1:
       // Command without argument
-      return new Cmd(cmds[0], []);
+      return new Command(cmds[0], []);
     default:
       // Command with arguments
-      return new Cmd(cmds[0], cmds.slice(1));
+      return new Command(cmds[0], cmds.slice(1));
   }
 }
