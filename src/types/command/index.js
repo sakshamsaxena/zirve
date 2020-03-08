@@ -1,6 +1,5 @@
 import Whoami from "./commands/whoami";
 import Tree from "./commands/tree";
-import Ls from "./commands/ls";
 import Init from "./commands/init";
 
 const validCmds = [
@@ -11,10 +10,6 @@ const validCmds = [
   {
     cmdStr: "Tree",
     cmdCls: Tree
-  },
-  {
-    cmdStr: "Ls",
-    cmdCls: Ls
   },
   {
     cmdStr: "Init",

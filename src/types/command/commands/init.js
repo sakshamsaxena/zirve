@@ -24,8 +24,7 @@ class Init {
         <br/>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Commands Available</b></p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whoami</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ls [-R] [DIRECTORY]</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tree [DIRECTORY]</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tree</p>
         <br/>
       </div>
     );

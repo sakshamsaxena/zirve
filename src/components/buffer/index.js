@@ -3,7 +3,6 @@ import { v1 as uuidv1 } from 'uuid';
 
 class Buffer extends React.Component {
   render() {
-    console.log(this.props.value)
     let buffers = this.props.value.map(buffer => {
       let uniqueKey = uuidv1();
       let input = buffer.userInput;
