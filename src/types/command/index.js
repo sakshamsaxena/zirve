@@ -1,8 +1,13 @@
 import Whoami from "./commands/whoami";
 import Tree from "./commands/tree";
 import Init from "./commands/init";
+import Anniversary from "./commands/anniversary";
 
 const validCmds = [
+  {
+    cmdStr: "Anniversary",
+    cmdCls: Anniversary
+  },
   {
     cmdStr: "Whoami",
     cmdCls: Whoami
