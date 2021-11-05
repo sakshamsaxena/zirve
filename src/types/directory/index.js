@@ -42,20 +42,33 @@ let Directory = [
         Name: "Experience",
         Children: [
             {
-                Name: "Zomato Media Pvt. Ltd.",
+                Name: "BookMyShow (BigTree Entertainment Pvt. Ltd.)",
+                Children: [
+                    {
+                        Name: "Software Development Engineer II",
+                        Children: []
+                    },
+                    {
+                        Name: "From Oct 2020 to present",
+                        Children: []
+                    },
+                ]
+            },
+            {
+                Name: "Zomato (Zomato Media Pvt. Ltd.)",
                 Children: [
                     {
                         Name: "Software Development Engineer I",
                         Children: []
                     },
                     {
-                        Name: "From March 2019 to present",
+                        Name: "From March 2019 to Sept 2020",
                         Children: []
                     },
                 ]
             },
             {
-                Name: "BCS Technologies",
+                Name: "BCS Technologies (DoubleEdge Consulting Pvt. Ltd.)",
                 Children: [
                     {
                         Name: "Associate Software Developer",

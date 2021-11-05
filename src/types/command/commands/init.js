@@ -18,7 +18,7 @@ class Init {
         <p>Hope you enjoy your session.</p>
         <br/>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Quick Links</b></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume&nbsp;: [<a href="https://drive.google.com/file/d/1ibVnn3KS0KENWbr8eBc_qNF9__l8rNs5/view">Download</a>]</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume&nbsp;: [<a href="https://drive.google.com/file/d/1AZ-NwkIGtZMUB_xUmA16MC96u89Rh5r6/view">Download</a>]</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub&nbsp;: [<a href="https://github.com/sakshamsaxena">sakshamsaxena</a>]</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;: [saksham_saxena@outlook.com]</p>
         <br/>
