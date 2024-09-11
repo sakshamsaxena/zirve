@@ -3,7 +3,7 @@ ZIRVE_DIR=$(pwd)
 npm run release
 cd $(mktemp -d)
 pwd
-git clone https://github.com/sakshamsaxena/zirve.git
+git clone git@github.com:sakshamsaxena/zirve.git
 cd zirve
 git checkout master
 cp $ZIRVE_DIR/dist/bundle.js ./dist/bundle.js
