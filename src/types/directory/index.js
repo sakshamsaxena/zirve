@@ -42,6 +42,19 @@ let Directory = [
         Name: "Experience",
         Children: [
             {
+                Name: "Arts Consolidated ApS",
+                Children: [
+                    {
+                        Name: "Senior Backend Engineer",
+                        Children: []
+                    },
+                    {
+                        Name: "From Feb 2023 to present",
+                        Children: []
+                    },
+                ]
+            },
+            {
                 Name: "BookMyShow (BigTree Entertainment Pvt. Ltd.)",
                 Children: [
                     {
@@ -49,7 +62,7 @@ let Directory = [
                         Children: []
                     },
                     {
-                        Name: "From Oct 2020 to present",
+                        Name: "From Oct 2020 to Jan 2023",
                         Children: []
                     },
                 ]
