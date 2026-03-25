@@ -15,12 +15,17 @@ class Init {
       <div>
         <p>Hey, Saksham here. Glad to see you logged in!</p>
         <p>This is my personal website in a (nut)shell.</p>
-        <p>Hope you enjoy your session.</p>
         <br/>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Quick Links</b></p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resume&nbsp;: [<a href="https://drive.google.com/file/d/1AhSVa5Mc4kLke3mP-ZdR7IM6YeyYyR8Q/view">Download</a>]</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub&nbsp;: [<a href="https://github.com/sakshamsaxena">sakshamsaxena</a>]</p>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;: [saksham_saxena@outlook.com]</p>
+        <p>Currently building <b>Nexus AI</b> — partnering with early-stage startups</p>
+        <p>to accelerate growth through cloud modernisation, DevOps maturity,</p>
+        <p>and Generative AI adoption.</p>
+        <br/>
+        <p>10+ years connecting the dots between technology, business strategy,</p>
+        <p>and operations. I solve the problems that lie between departments.</p>
+        <br/>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Get in touch</b></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: [saksham@nexusai.world]</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn&nbsp;: [<a href="https://www.linkedin.com/in/sakshamsaxenanexusai/">sakshamsaxenanexusai</a>]</p>
         <br/>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Commands Available</b></p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;whoami</p>

@@ -42,36 +42,49 @@ let Directory = [
         Name: "Experience",
         Children: [
             {
-                Name: "Arts Consolidated ApS",
+                Name: "Nexus AI",
                 Children: [
                     {
-                        Name: "Senior Backend Engineer",
+                        Name: "Founder & CEO",
                         Children: []
                     },
                     {
-                        Name: "From Feb 2023 to present",
+                        Name: "From April 2025 to present",
                         Children: []
                     },
                 ]
             },
             {
-                Name: "BookMyShow (BigTree Entertainment Pvt. Ltd.)",
+                Name: "Aarambh Technologies",
                 Children: [
                     {
-                        Name: "Software Development Engineer II",
+                        Name: "Founder & CEO",
                         Children: []
                     },
                     {
-                        Name: "From Oct 2020 to Jan 2023",
+                        Name: "From March 2023 to March 2025",
                         Children: []
                     },
                 ]
             },
             {
-                Name: "Zomato (Zomato Media Pvt. Ltd.)",
+                Name: "BookMyShow",
                 Children: [
                     {
-                        Name: "Software Development Engineer I",
+                        Name: "Software Engineer",
+                        Children: []
+                    },
+                    {
+                        Name: "From Oct 2020 to Feb 2023",
+                        Children: []
+                    },
+                ]
+            },
+            {
+                Name: "Zomato",
+                Children: [
+                    {
+                        Name: "Software Engineer",
                         Children: []
                     },
                     {
@@ -81,14 +94,14 @@ let Directory = [
                 ]
             },
             {
-                Name: "BCS Technologies (DoubleEdge Consulting Pvt. Ltd.)",
+                Name: "BCS Technologies",
                 Children: [
                     {
-                        Name: "Associate Software Developer",
+                        Name: "Associate Software Engineer",
                         Children: []
                     },
                     {
-                        Name: "From June 2017 to Feb 2019",
+                        Name: "From June 2017 to March 2019",
                         Children: []
                     }
                 ]
